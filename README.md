@@ -114,7 +114,7 @@ The system operates in three modes:
 
 ---
 
-## 📡 Serial Communication Protocol
+## Serial Communication Protocol
 
 ESP8266 sends structured data:
 
