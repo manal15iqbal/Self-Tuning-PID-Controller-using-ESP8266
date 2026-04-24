@@ -1,7 +1,7 @@
-# 🚀 Self-Tuning PID Controller using ESP8266
+# Self-Tuning PID Controller using ESP8266
 Self-tuning PID motor control system using ESP8266 with vibration and Back EMF feedback, featuring real-time monitoring via a Python-based dashboard.
 
-## 📌 Overview
+## Overview
 
 Manual PID tuning is inefficient and often results in instability, oscillations, and energy loss.
 This project solves that by implementing an **automatic PID tuning system** that:
@@ -12,19 +12,19 @@ This project solves that by implementing an **automatic PID tuning system** that
 * Improves motor stability without manual intervention
 
 
-## 🧠 Core Idea
+## Core Idea
 
 The system combines:
 
-* 📡 **Vibration feedback (Microphone + FFT)** → detects oscillations
-* ⚡ **Back EMF feedback** → estimates motor speed behavior
-* 🔁 **Ziegler–Nichols method** → computes PID parameters
+* **Vibration feedback (Microphone + FFT)** → detects oscillations
+* **Back EMF feedback** → estimates motor speed behavior
+* **Ziegler–Nichols method** → computes PID parameters
 
 This hybrid approach enables **fast and reliable auto-tuning**.
 
 ---
 
-## ⚙️ System Architecture
+## System Architecture
 
 ```id="arch1"
 ESP8266 (PID Controller)
@@ -39,7 +39,7 @@ Web Dashboard (Real-Time Visualization)
 
 ---
 
-## 🔬 Methodology
+## Methodology
 
 1. System starts in unstable condition
 2. Auto-tuning is triggered
@@ -51,7 +51,7 @@ Web Dashboard (Real-Time Visualization)
 
 ---
 
-## 🛠️ Hardware Components
+## Hardware Components
 
 * ESP8266 (Microcontroller)
 * DC Motor (Plant)
@@ -62,7 +62,7 @@ Web Dashboard (Real-Time Visualization)
 
 ---
 
-## 💻 Software Stack
+## Software Stack
 
 * Arduino IDE (Embedded programming)
 * Python (Flask + PySerial)
@@ -70,7 +70,7 @@ Web Dashboard (Real-Time Visualization)
 
 ---
 
-## 📊 PID Tuning Algorithm
+## PID Tuning Algorithm
 
 Using Ziegler–Nichols method:
 
@@ -87,7 +87,7 @@ Where:
 
 ---
 
-## 📈 Results
+## Results
 
 ### Before Auto-Tuning
 
@@ -104,7 +104,7 @@ Where:
 
 ---
 
-## 🧪 System Behavior
+## System Behavior
 
 The system operates in three modes:
 
@@ -129,7 +129,7 @@ Kd = 0.05
 ---
 
 
-## 🚀 How to Run
+## How to Run
 
 1. Install dependencies:
 
@@ -153,7 +153,7 @@ http://localhost:5000
 
 ---
 
-## 🔮 Future Improvements
+## Future Improvements
 
 * Closed-loop response plotting (setpoint vs output)
 * Data logging and export
@@ -162,7 +162,7 @@ http://localhost:5000
 
 ---
 
-## 🏁 Conclusion
+## Conclusion
 
 This project successfully demonstrates a **low-cost, sensor-driven self-tuning PID controller** that:
 
